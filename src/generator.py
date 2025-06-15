@@ -24,7 +24,7 @@ class SudokuGenerator:
         return self.solution
 
 
-    def generate(self, difficulty: Literal['easy', 'medium', 'hard']):
+    def generate(self, difficulty):
         clues = {
             'easy': random.randint(36, 45),
             'medium': random.randint(27, 35),
