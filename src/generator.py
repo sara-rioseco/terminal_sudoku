@@ -1,6 +1,5 @@
 import random
 from copy import deepcopy
-from typing import Literal
 
 
 class SudokuGenerator:
@@ -22,7 +21,6 @@ class SudokuGenerator:
         print(f"Inserted {number!r} at position (x={x}, y={y})")
 
         return self.solution
-
 
     def generate(self, difficulty):
         clues = {

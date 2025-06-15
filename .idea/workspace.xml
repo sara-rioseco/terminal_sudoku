@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="51187c9d-2600-4204-8743-99f155e15548" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/solver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_game.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_game.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_generator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_solver.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_solver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

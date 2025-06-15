@@ -1,4 +1,4 @@
-from generator import is_safe, SudokuGenerator
+from generator import is_safe
 
 
 class SudokuSolver:

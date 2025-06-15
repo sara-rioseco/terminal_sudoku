@@ -1,7 +1,7 @@
 import time
 from copy import deepcopy
-
 from src import SudokuGenerator
+
 
 MAGENTA = '\033[35m'
 RESET = '\033[0m'
@@ -110,6 +110,7 @@ def play_again_prompt() -> bool:
     choice = input("Play again? (y/n): ").strip().lower()
     print()
     return choice.startswith('y')
+
 
 if __name__ == "__main__":
     play_sudoku()
