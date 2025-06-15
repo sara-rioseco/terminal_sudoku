@@ -30,7 +30,7 @@ Ideal for:
 
 ## 🔧 Why You’ll Love It
 
-- **All-in-one CLI experience**: Generate a puzzle, solve one you have, or play interactively—no extra tools needed
+- **CLI game experience**: play interactively—no extra tools needed.
 - **Clean & simple**: no extra dependencies—just Python and the terminal.
 - **Educational**: explore Sudoku logic and solver implementation.
 - **Modular**: easy to integrate into other Python scripts, pipelines, or teaching tools.
