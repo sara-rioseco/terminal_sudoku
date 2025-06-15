@@ -2,8 +2,8 @@ import random
 from copy import deepcopy
 from typing import Literal
 
+
 class SudokuGenerator:
-    Difficulty = Literal['easy', 'medium', 'hard']
 
     def __init__(self):
         self.solution = [[0] * 9 for _ in range(9)]
@@ -21,7 +21,10 @@ class SudokuGenerator:
         self.solution[y][x] = number
         print(f"Inserted {number!r} at position (x={x}, y={y})")
 
-    def generate(self, difficulty: Difficulty):
+        return self.solution
+
+
+    def generate(self, difficulty: Literal['easy', 'medium', 'hard']):
         clues = {
             'easy': random.randint(36, 45),
             'medium': random.randint(27, 35),
@@ -42,12 +45,13 @@ class SudokuGenerator:
 
         return puzzle
 
+
 def fill_grid(grid):
     def solver():
         for y in range(9):
             for x in range(9):
                 if grid[y][x] == 0:
-                    random.shuffle(nums := list(range(1,10)))
+                    random.shuffle(nums := list(range(1, 10)))
                     for n in nums:
                         if is_safe(grid, x, y, n):
                             grid[y][x] = n
@@ -56,7 +60,9 @@ def fill_grid(grid):
                     grid[y][x] = 0
                     return False
         return True
+
     solver()
+
 
 def is_safe(grid: list[list[int]], x: int, y: int, num: int) -> bool:
     # Check row
@@ -72,6 +78,7 @@ def is_safe(grid: list[list[int]], x: int, y: int, num: int) -> bool:
             if grid[box_y + dy][box_x + dx] == num:
                 return False
     return True
+
 
 def solutions_count(grid: list[list[int]], limit: int = 1) -> int:
     def backtrack() -> int:
@@ -92,19 +99,5 @@ def solutions_count(grid: list[list[int]], limit: int = 1) -> int:
         return 1
 
     return backtrack()
-
-s = SudokuGenerator()
-
-board = s.generate('easy')
-
-print("Value at (8,3):", s.get_cell(8, 3))  # Outputs: 7
-
-for row in s.solution:
-    print(row)
-
-print()
-
-for row in board:
-    print(row)
 
 

@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "terminal-sudoku"
 version = "0.1.0"
-description = "A sudoku that you can play on the terminal, also a sudoku generator and solver."
+description = "A sudoku generator and solver, playable in the terminal coming soon."
 authors = [
     {name = "Sara", email = "sara.rioseco@gmail.com"}
 ]
@@ -17,4 +17,4 @@ dependencies = [
 ]
 
 [project.urls]
-"Homepage" = "https://github.com/sara-rioseco/terminal-sudoku"
+"Homepage" = "https://github.com/sara-rioseco/terminal_sudoku"
